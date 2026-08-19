@@ -89,7 +89,7 @@ cv:
 # 🎨 TEMPLATE CONFIG (Do Not Touch Unless Tweaking Design)
 # ==========================================
 design:
-  theme: custom_theme
+  theme: customtheme
   page:
     size: a4
     top_margin: 1.2cm
@@ -184,7 +184,7 @@ design:
         *LOCATION*
 
 locale:
-  language: en
+  language: english
   phone_number_format: international
   page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
   last_updated_date_template: Last updated in TODAY

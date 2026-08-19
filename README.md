@@ -9,7 +9,7 @@ Instead of fighting with word processors or manual formatting, this repository t
 This project strictly separates **content** (data) from **design** (presentation).
 
 - **Content:** All resume data (experience, projects, skills) lives in a single `src/resume.yaml` file.
-- **Design Engine:** The visual layout is powered by a custom Typst templating engine located in `src/custom_theme/`.
+- **Design Engine:** The visual layout is powered by a custom Typst templating engine located in `src/customtheme/`.
 - **Automation (CI/CD):** A GitHub Action `.github/workflows/compile.yml` listens for changes to the `master` branch. When triggered, it compiles the YAML data through the Typst engine and outputs the final artifacts.
 
 ## 📂 Repository Structure
@@ -21,7 +21,7 @@ This project strictly separates **content** (data) from **design** (presentation
 ├── output/
 │ └── Akash_Gupta_CV.pdf # The final compiled resume artifact
 └── src/
-├── custom_theme/ # Typst / Jinja2 template engine (Do not touch)
+├── customtheme/ # Typst / Jinja2 template engine (Do not touch)
 └── resume.yaml # Core data file (Edit this to update the resume)
 \`\`\`
 
