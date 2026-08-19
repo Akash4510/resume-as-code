@@ -1,0 +1,44 @@
+name: Compile Resume PDF
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+# CRITICAL: This gives the bot permission to push the PDF back to your repo
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install RenderCV
+        run: pip install "rendercv[full]"
+
+      - name: Render Resume
+        run: rendercv render src/resume.yaml --output-folder-name output
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: output/*.pdf
+          if-no-files-found: error
+
+      - name: Commit PDF to repo
+        run: |
+          cp output/*.pdf resume.pdf 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resume.pdf
+          git diff --cached --quiet || git commit -m "chore: auto-compile resume PDF [skip ci]"
+          git push
