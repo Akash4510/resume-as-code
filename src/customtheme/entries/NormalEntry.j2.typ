@@ -1,17 +1,21 @@
-#resume-trio-heading(
-  [{{ entry.name }} {% if entry.project_url %}#h(0.5em)#link("{{ entry.project_url }}")[#fa-icon("external-link", size: 0.9em)]{% endif %}],
-  [{{ entry.summary }}],
+#block(
+  below: 12pt,
   [
-    #set text(size: 0.9em)
-    {% if entry.github_url %}#strong[\[#link("{{ entry.github_url }}")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub]\]]{% endif %}
+    #resume-trio-heading(
+      [{{ entry.name }} {% if entry.project_url %}#h(0.5em)#link("{{ entry.project_url }}")[#fa-icon("external-link", size: 0.9em)] {% endif %}],
+      [{{ entry.summary }}],
+      [
+        #set text(size: 0.9em)
+        {% if entry.github_url %}#strong[\[#link("{{ entry.github_url }}")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub]\]]{% endif %}
+      ]
+    )
+    {% if entry.highlights %}
+    #v(8.5pt)
+    #highlights(
+      {% for item in entry.highlights %}
+      [{{ item }}],
+      {% endfor %}
+    )
+    {% endif %}
   ]
 )
-{% if entry.highlights %}
-#v(8.5pt)
-#highlights(
-  {% for item in entry.highlights %}
-  [{{ item }}],
-  {% endfor %}
-)
-#v(12pt)
-{% endif %}

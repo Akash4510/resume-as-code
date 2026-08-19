@@ -155,69 +155,87 @@
 
 == Technical Skills
 
-#list(
-  marker: dot,
-  spacing: 0.8em,
-  indent: 0in,
-  body-indent: 0.5em,
-  [#strong[Languages & Frameworks:] Next.js, React, Node.js, Express.js, TypeScript, JavaScript, Python, C++, C, Java, Tailwind, Prisma, Flask, Framer Motion, GSAP, Zustand, TanStack React Query]
+#block(
+  below: 0.8em,
+  [
+    #list(
+      marker: dot,
+      spacing: 0pt,
+      indent: 0in,
+      body-indent: 0.5em,
+      [#strong[Languages & Frameworks:] Next.js, React, Node.js, Express.js, TypeScript, JavaScript, Python, C++, C, Java, Tailwind, Prisma, Flask, Framer Motion, GSAP, Zustand, TanStack React Query]
+    )
+  ]
 )
-#v(0.8em)
 
-#list(
-  marker: dot,
-  spacing: 0.8em,
-  indent: 0in,
-  body-indent: 0.5em,
-  [#strong[Databases & Platforms:] PostgreSQL, MongoDB, SQL, Git, AWS S3, Linux, Bash, Vercel]
+#block(
+  below: 0.8em,
+  [
+    #list(
+      marker: dot,
+      spacing: 0pt,
+      indent: 0in,
+      body-indent: 0.5em,
+      [#strong[Databases & Platforms:] PostgreSQL, MongoDB, SQL, Git, AWS S3, Linux, Bash, Vercel]
+    )
+  ]
 )
-#v(0.8em)
 
-#list(
-  marker: dot,
-  spacing: 0.8em,
-  indent: 0in,
-  body-indent: 0.5em,
-  [#strong[Core Concepts & Knowledge:] Full-Stack Architecture, Scalable Systems, API Design, OOP, DSA, CI\/CD, AI\/ML (Pandas, NumPy, Scikit-learn, TensorFlow, LangChain), Data Science, Salesforce]
+#block(
+  below: 0.8em,
+  [
+    #list(
+      marker: dot,
+      spacing: 0pt,
+      indent: 0in,
+      body-indent: 0.5em,
+      [#strong[Core Concepts & Knowledge:] Full-Stack Architecture, Scalable Systems, API Design, OOP, DSA, CI\/CD, AI\/ML (Pandas, NumPy, Scikit-learn, TensorFlow, LangChain), Data Science, Salesforce]
+    )
+  ]
 )
-#v(0.8em)
 
 == Experience
 
-#resume-quad-heading(
-  [Tata Consultancy Services (TCS)],
+#block(
+   below: 14pt,
   [
-      Aug 2024 - Present
-  ],
-  [Full-Stack Engineer],
-  [Bangalore, India]
+    #resume-quad-heading(
+      [Tata Consultancy Services (TCS)],
+      [
+          Aug 2024 - Present
+      ],
+      [Full-Stack Engineer],
+      [Bangalore, India]
+    )
+    #v(10pt)
+    #highlights(
+      [Led the migration of multiple legacy websites from AEM to #strong[Next.js], #strong[reducing page load times by over 90\%] by leveraging #strong[SSR] and #strong[server actions], while optimizing the overall project architecture for scalability.],
+      [Spearheaded the implementation of a #strong[custom asynchronous state management] solution #strong[(like tanstack react query)] with advanced features like #strong[timed caching] and #strong[optimistic updates], complementing the use of #strong[Redux] for the frontend.],
+      [Pioneered a robust, scalable upload and download solution for #strong[large files (up to 50GB)] using #strong[Next.js] and #strong[AWS S3].],
+      [Architected and implemented a multilingual #strong[internationalization system] that seamlessly integrated with an existing #strong[DevOps architecture], and enforced good coding practices to enable easy adoption and refactoring by other teams.],
+      [Engineered and deployed dedicated and #strong[proxy APIs to enhance application security] while collaborating cross-functionally with diverse teams (including the #strong[JAVA microservices backend], APIGEE and Salesforce) to design and implement scalable, #strong[full-stack solutions] for the client. And also #strong[mentored] over 10 new and experienced developers.],
+    )
+  ]
 )
-#v(10pt)
-#highlights(
-  [Led the migration of multiple legacy websites from AEM to #strong[Next.js], #strong[reducing page load times by over 90\%] by leveraging #strong[SSR] and #strong[server actions], while optimizing the overall project architecture for scalability.],
-  [Spearheaded the implementation of a #strong[custom asynchronous state management] solution #strong[(like tanstack react query)] with advanced features like #strong[timed caching] and #strong[optimistic updates], complementing the use of #strong[Redux] for the frontend.],
-  [Pioneered a robust, scalable upload and download solution for #strong[large files (up to 50GB)] using #strong[Next.js] and #strong[AWS S3].],
-  [Architected and implemented a multilingual #strong[internationalization system] that seamlessly integrated with an existing #strong[DevOps architecture], and enforced good coding practices to enable easy adoption and refactoring by other teams.],
-  [Engineered and deployed dedicated and #strong[proxy APIs to enhance application security] while collaborating cross-functionally with diverse teams (including the #strong[JAVA microservices backend], APIGEE and Salesforce) to design and implement scalable, #strong[full-stack solutions] for the client. And also #strong[mentored] over 10 new and experienced developers.],
-)
-#v(12pt)
 
-
-#resume-quad-heading(
-  [Skiaverse (Internship)],
+#block(
+   below: 14pt,
   [
-      Jul 2023 - Dec 2023
-  ],
-  [Full-Stack Developer (Intern)],
-  [Remote]
+    #resume-quad-heading(
+      [Skiaverse (Internship)],
+      [
+          Jul 2023 - Dec 2023
+      ],
+      [Full-Stack Developer (Intern)],
+      [Remote]
+    )
+    #v(10pt)
+    #highlights(
+      [Architected and solely developed a full-stack web application from scratch using #strong[Vite, Express], and #strong[Postgres DB].],
+      [Engineered advanced performance features like #strong[lazy loading, dynamic routing], and #strong[optimistic updates] for a robust, highly-praised UX, collaborating with cross-functional teams, ensuring robust data management for the application.],
+    )
+  ]
 )
-#v(10pt)
-#highlights(
-  [Architected and solely developed a full-stack web application from scratch using #strong[Vite, Express], and #strong[Postgres DB].],
-  [Engineered advanced performance features like #strong[lazy loading, dynamic routing], and #strong[optimistic updates] for a robust, highly-praised UX, collaborating with cross-functional teams, ensuring robust data management for the application.],
-)
-#v(12pt)
-
 
 == Education
 
@@ -232,46 +250,55 @@
 
 == Projects
 
-#resume-trio-heading(
-  [AI Companion #h(0.5em)#link("https:\/\/ai-companion-nu.vercel.app\/")[#fa-icon("external-link", size: 0.9em)]],
-  [],
+#block(
+  below: 12pt,
   [
-    #set text(size: 0.9em)
-#strong[\[#link("https:\/\/github.com\/Akash4510\/ai-companion")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub]\]]  ]
+    #resume-trio-heading(
+      [AI Companion #h(0.5em)#link("https:\/\/ai-companion-nu.vercel.app\/")[#fa-icon("external-link", size: 0.9em)] ],
+      [],
+      [
+        #set text(size: 0.9em)
+#strong[\[#link("https:\/\/github.com\/Akash4510\/ai-companion")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub]\]]      ]
+    )
+    #v(8.5pt)
+    #highlights(
+      [Engineered a full-stack SaaS AI companion platform leveraging the powerful #strong[Llama-2 model] with the #strong[Langchain] framework to create dynamic, personalized conversational experiences.],
+    )
+  ]
 )
-#v(8.5pt)
-#highlights(
-  [Engineered a full-stack SaaS AI companion platform leveraging the powerful #strong[Llama-2 model] with the #strong[Langchain] framework to create dynamic, personalized conversational experiences.],
-)
-#v(12pt)
 
-
-#resume-trio-heading(
-  [Team Chat (Discord Clone) ],
-  [],
+#block(
+  below: 12pt,
   [
-    #set text(size: 0.9em)
-#strong[\[#link("https:\/\/github.com\/Akash4510\/team-chat")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub]\]]  ]
+    #resume-trio-heading(
+      [Team Chat (Discord Clone) ],
+      [],
+      [
+        #set text(size: 0.9em)
+#strong[\[#link("https:\/\/github.com\/Akash4510\/team-chat")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub]\]]      ]
+    )
+    #v(8.5pt)
+    #highlights(
+      [Architected a scalable, real-time chat application using #strong[WebSockets] with a polling fallback to power a foundation for live chats, direct messages with media upload and download support using #strong[Cloudinary], along with voice\/video channels.],
+      [Developed a robust backend with #strong[Next.js] and #strong[Prisma] to handle multiple servers and thousands of messages, implementing advanced strategies like #strong[batch message loading] and live status handling for optimal performance.],
+    )
+  ]
 )
-#v(8.5pt)
-#highlights(
-  [Architected a scalable, real-time chat application using #strong[WebSockets] with a polling fallback to power a foundation for live chats, direct messages with media upload and download support using #strong[Cloudinary], along with voice\/video channels.],
-  [Developed a robust backend with #strong[Next.js] and #strong[Prisma] to handle multiple servers and thousands of messages, implementing advanced strategies like #strong[batch message loading] and live status handling for optimal performance.],
-)
-#v(12pt)
 
-
-#resume-trio-heading(
-  [Multi-tenant CMS E-commerce Dashboard ],
-  [],
+#block(
+  below: 12pt,
   [
-    #set text(size: 0.9em)
-#strong[\[#link("https:\/\/github.com\/Akash4510\/cms-multi-tenant-admin-dashboard")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub]\]]  ]
+    #resume-trio-heading(
+      [Multi-tenant CMS E-commerce Dashboard ],
+      [],
+      [
+        #set text(size: 0.9em)
+#strong[\[#link("https:\/\/github.com\/Akash4510\/cms-multi-tenant-admin-dashboard")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub]\]]      ]
+    )
+    #v(8.5pt)
+    #highlights(
+      [Architected a scalable, #strong[multi-tenant] e-commerce #strong[CMS] with a central database, enabling seamless connection and management of multiple distinct frontend shops.],
+      [Developed a robust admin dashboard with comprehensive product and inventory management, integrating real-time revenue tracking to provide business owners with actionable insights.],
+    )
+  ]
 )
-#v(8.5pt)
-#highlights(
-  [Architected a scalable, #strong[multi-tenant] e-commerce #strong[CMS] with a central database, enabling seamless connection and management of multiple distinct frontend shops.],
-  [Developed a robust admin dashboard with comprehensive product and inventory management, integrating real-time revenue tracking to provide business owners with actionable insights.],
-)
-#v(12pt)
-
