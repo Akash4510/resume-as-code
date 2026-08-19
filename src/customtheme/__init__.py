@@ -1,5 +1,6 @@
 from typing import Literal
-from rendercv.themes.options import ThemeOptions
+from rendercv.themes.classic import ClassicThemeOptions
 
-class CustomthemeThemeOptions(ThemeOptions):
+# Inheriting from ClassicThemeOptions tells the compiler to accept all your design settings!
+class CustomthemeThemeOptions(ClassicThemeOptions):
     theme: Literal["customtheme"] = "customtheme"
