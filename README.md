@@ -9,47 +9,59 @@ Instead of fighting with word processors or manual formatting, this repository t
 This project strictly separates **content** (data) from **design** (presentation).
 
 - **Content:** All resume data (experience, projects, skills) lives in a single `src/resume.yaml` file.
-- **Design Engine:** The visual layout is powered by a custom Typst templating engine located in `src/customtheme/`.
-- **Automation (CI/CD):** A GitHub Action `.github/workflows/compile.yml` listens for changes to the `master` branch. When triggered, it compiles the YAML data through the Typst engine and outputs the final artifacts.
+- **Design Engine:** The visual layout is powered by a custom Jinja2/Typst templating engine located in `src/customtheme/`.
+- **Automation (CI/CD):** A GitHub Action (`.github/workflows/compile.yml`) listens for changes to the `master` branch. When triggered, it spins up a python environment, compiles the YAML data through the custom theme, and automatically commits the updated PDF back to the repository.
 
 ## 📂 Repository Structure
 
-\`\`\`text
+```text
 .
 ├── .github/workflows/
-│ └── compile.yml # CI/CD pipeline for automated PDF generation
+│   └── compile.yml        # CI/CD pipeline for automated PDF compilation
 ├── output/
-│ └── Akash_Gupta_CV.pdf # The final compiled resume artifact
+│   └── Akash_Gupta_CV.pdf # The final compiled resume artifact
 └── src/
-├── customtheme/ # Typst / Jinja2 template engine (Do not touch)
-└── resume.yaml # Core data file (Edit this to update the resume)
-\`\`\`
+    ├── customtheme/       # Custom Typst / Jinja2 template engine & entry styles
+    │   └── entries/       # Specialized entry layouts (Experience, Education, Projects, etc.)
+    └── resume.yaml        # Core data file (Edit this to update resume content)
+
+```
 
 ## 🚀 How to Update the Resume
 
-Updating this resume takes seconds and requires absolutely no formatting work.
+Updating this resume takes seconds and requires absolutely no manual formatting work.
 
 1. Open `src/resume.yaml`.
 2. Scroll to the **RESUME CONTENT** section.
-3. Add, edit, or remove bullet points, jobs, or projects using standard Markdown syntax.
+3. Add, edit, or remove bullet points, jobs, or projects using standard YAML and Markdown syntax.
 4. Commit and push the changes to GitHub.
 
-The GitHub Action will automatically intercept the push, spin up the RenderCV environment, compile the new PDF, and drop it into the `output/` folder.
+The GitHub Action will automatically intercept the push, build the resume, and commit the fresh PDF artifact.
 
-## 💻 Local Development
+## 💻 Local Development & Environment Setup
 
-If you want to render the resume locally before pushing to GitHub, you need Python installed on your machine.
+To match the GitHub Actions runner and test changes locally inside a sandbox, follow these steps (configured for WSL Ubuntu / Zsh):
 
-1. Install RenderCV:
-   \`\`\`bash
-   pip install rendercv
-   \`\`\`
-2. Run the compiler:
-   \`\`\`bash
-   rendercv render src/resume.yaml
-   \`\`\`
-   The updated PDF will be generated instantly in your local `output/` directory.
+1. **Create and activate a virtual environment:**
 
----
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+2. **Install RenderCV:**
+
+```bash
+pip install --upgrade pip
+pip install "rendercv[full]"
+```
+
+3. **Render the Resume Locally:**
+
+```bash
+python -m rendercv render src/resume.yaml
+```
+
+## The updated PDF will be generated instantly in your root `output/` directory.
 
 _Built with [RenderCV](https://github.com/rendercv/rendercv) and [Typst](https://typst.app/)._
