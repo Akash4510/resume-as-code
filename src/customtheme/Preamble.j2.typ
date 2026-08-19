@@ -1,14 +1,14 @@
 #import "@preview/fontawesome:0.5.0": fa-icon
 
-#let name = "<< cv.name >>"
-#let locale-catalog-language = "<< locale.language >>"
-#let design-page-size = "<< design.page.size >>"
-#let design-colors-text = << design.colors.text.as_rgb() >>
-#let design-text-font-size = << design.text.font_size >>
-#let design-text-leading = 0.55em // TIGHTER spacing for continuous wrapped lines
-#let design-text-font-family = "<< design.text.font_family >>"
-#let design-entries-vertical-space-between-entries = 0.8em // WIDER spacing between separate bullet points
-#let design-highlights-top-margin = << design.highlights.top_margin >>
+#let name = "{{ cv.name }}"
+#let locale-catalog-language = "{{ locale.language_iso_639_1 }}"
+#let design-page-size = "{{ design.page.size }}"
+#let design-colors-text = {{ design.colors.body.as_rgb() }}
+#let design-text-font-size = {{ design.typography.font_size.body }}
+#let design-text-leading = {{ design.typography.line_spacing }}
+#let design-text-font-family = "{{ design.typography.font_family.body }}"
+#let design-entries-vertical-space-between-entries = {{ design.sections.space_between_regular_entries }}
+#let design-highlights-top-margin = {{ design.entries.highlights.space_above }}
 
 // Metadata:
 #set document(author: name, title: name + "'s CV")
@@ -16,10 +16,10 @@
 // Page settings:
 #set page(
   margin: (
-    top: << design.page.top_margin >>,
-    bottom: << design.page.bottom_margin >>,
-    left: << design.page.left_margin >>,
-    right: << design.page.right_margin >>,
+    top: {{ design.page.top_margin }},
+    bottom: {{ design.page.bottom_margin }},
+    left: {{ design.page.left_margin }},
+    right: {{ design.page.right_margin }},
   ),
   paper: design-page-size,
 )
@@ -67,10 +67,7 @@
 
 // Links:
 #let original-link = link
-#let link(url, body) = {
-  body = [#underline(offset: 2.5pt, body)] 
-  original-link(url, body)
-}
+#let link(url, body) = original-link(url, [#underline(offset: 2.5pt, body)])
 
 // Section Headings (mimicking \scshape\large + \titlerule)
 #show heading.where(level: 2): it => [
