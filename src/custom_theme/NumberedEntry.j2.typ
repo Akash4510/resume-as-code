@@ -1,0 +1,1 @@
++ << entry.number|replace("\\(", "(")|replace("\\)", ")")|replace("\\/", "/") >>
