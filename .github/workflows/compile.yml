@@ -25,13 +25,13 @@ jobs:
         run: pip install "rendercv[full]"
 
       - name: Render Resume
-        run: python3 -m rendercv render src/resume.yaml --output-folder-name output
+        run: python3 -m rendercv render src/resume.yaml
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf
-          path: rendercv_output/*.pdf # Updated to the default output folder
+          path: output/*.pdf
           if-no-files-found: error
 
       - name: Commit PDF to repo
