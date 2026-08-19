@@ -25,18 +25,19 @@ jobs:
         run: pip install "rendercv[full]"
 
       - name: Render Resume
-        run: rendercv render src/resume.yaml --output-folder-name output
+        # Removed the illegal flag. RenderCV will automatically create a 'rendercv_output' folder.
+        run: rendercv render src/resume.yaml
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf
-          path: output/*.pdf
+          path: rendercv_output/*.pdf # Updated to the default output folder
           if-no-files-found: error
 
       - name: Commit PDF to repo
         run: |
-          cp output/*.pdf resume.pdf 2>/dev/null || true
+          cp rendercv_output/*.pdf resume.pdf 2>/dev/null || true
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add resume.pdf
