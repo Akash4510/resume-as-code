@@ -182,9 +182,3 @@ design:
       date_and_location_column_template: |-
         DATE
         *LOCATION*
-
-locale:
-  language: english
-  phone_number_format: international
-  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  last_updated_date_template: Last updated in TODAY
