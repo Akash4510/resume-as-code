@@ -241,7 +241,9 @@
 
 #resume-quad-heading(
   [Techno Main Saltlake],
-  [Kolkata, India, ],
+  [Kolkata, India
+    , 2020 – 2024
+  ],
   [B.Tech, Electronics and Instrumentation],
   [
     Aggregate CGPA: 9.4
