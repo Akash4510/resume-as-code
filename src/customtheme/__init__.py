@@ -1,9 +1,6 @@
 from typing import Literal
-from pydantic import Field
-from rendercv.themes.classic import ClassicThemeOptions
 
-class CustomthemeThemeOptions(ClassicThemeOptions):
-    theme: Literal["customtheme"] = Field(
-        default="customtheme",
-        description="The theme name."
-    )
+from rendercv.themes.options import ThemeOptions
+
+class MycustomthemeThemeOptions(ThemeOptions):
+    theme: Literal["customtheme"] = "customtheme"
