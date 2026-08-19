@@ -191,7 +191,7 @@
 
 #resume-quad-heading(
   [Tata Consultancy Services \(TCS\)],
-  [Aug 2024  --  Present],
+  [Aug 2024 – present],
   [Full-Stack Engineer],
   [Bangalore, India]
 )
@@ -208,7 +208,7 @@
 #v(design-entries-vertical-space-between-entries)
 #resume-quad-heading(
   [Skiaverse \(Internship\)],
-  [July 2023  --  Dec 2023],
+  [July 2023 – Dec 2023],
   [Full-Stack Developer \(Intern\)],
   [Remote]
 )
@@ -226,7 +226,7 @@
 
 #resume-quad-heading(
   [Techno Main Saltlake],
-  [Kolkata, India, 2020  --  2024],
+  [Kolkata, India, 2020 – 2024],
   [B.Tech, Electronics and Instrumentation],
   [
     Aggregate CGPA: 9.4

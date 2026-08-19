@@ -22,7 +22,7 @@ A detail-oriented Full-Stack Engineer with over a year of professional experienc
 
 ## Tata Consultancy Services (TCS), Full-Stack Engineer
 
-- Aug 2024  --  Present
+- Aug 2024 – present
 - Bangalore, India
 - Led the migration of multiple legacy websites from AEM to **Next.js**, **reducing page load times by over 90%** by leveraging **SSR** and **server actions**, while optimizing the overall project architecture for scalability.
 - Spearheaded the implementation of a **custom asynchronous state management** solution **(like tanstack react query)** with advanced features like **timed caching** and **optimistic updates**, complementing the use of **Redux** for the frontend.
@@ -32,7 +32,7 @@ A detail-oriented Full-Stack Engineer with over a year of professional experienc
 
 ## Skiaverse (Internship), Full-Stack Developer (Intern)
 
-- July 2023  --  Dec 2023
+- July 2023 – Dec 2023
 - Remote
 - Architected and solely developed a full-stack web application from scratch using **Vite, Express**, and **Postgres DB**.
 - Engineered advanced performance features like **lazy loading, dynamic routing**, and **optimistic updates** for a robust, highly-praised UX, collaborating with cross-functional teams, ensuring robust data management for the application.
@@ -41,7 +41,7 @@ A detail-oriented Full-Stack Engineer with over a year of professional experienc
 
 ## Techno Main Saltlake, B.Tech in Electronics and Instrumentation
 
-- 2020  --  2024
+- 2020 – 2024
 - Kolkata, India
 - Aggregate CGPA: 9.4
 
