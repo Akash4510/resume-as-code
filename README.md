@@ -109,7 +109,7 @@ pip install -r requirements.txt
 ```
 
 3. **Render the Resumes Locally:**
-   You can compile your changes instantly using either of the built-in helper scripts. These scripts will safely build all profiles and pull the finalized PDFs into the `resumes/` directory.
+   You can compile your changes instantly using either of the built-in helper scripts. These scripts will safely build all profiles into the isolated `output/` directory so you can preview them locally without affecting version control.
 
 - Using the shell script:
 
@@ -123,7 +123,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-**The updated PDFs will be generated instantly in your root `resumes/` directory.**
+**The updated PDFs will be generated instantly in your local `output/` directory.** _(Note: The root `resumes/` directory is strictly managed by CI/CD and will automatically update when you push your changes to GitHub)._
 
 ---
 

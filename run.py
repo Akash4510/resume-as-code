@@ -1,8 +1,6 @@
 import subprocess
 import sys
 import glob
-import os
-import shutil
 
 
 def main():
@@ -24,20 +22,13 @@ def main():
             print(f"❌ Render failed for {file}.")
             has_error = True  # Flag the error, but keep the loop going!
 
-    # Create the public distribution folder
-    os.makedirs("resumes", exist_ok=True)
-
-    # Collect all successful PDFs
-    pdf_files = glob.glob("output/*/*.pdf")
-    for pdf in pdf_files:
-        shutil.copy(pdf, "resumes/")
-
     # Fail the script at the very end if anything went wrong
     if has_error:
-        print("⚠️ Finished with errors. Successful PDFs were still moved to resumes/.")
+        print("⚠️ Finished with errors, check the logs above.")
+        print("Successful PDFs were still moved to output/.")
         sys.exit(1)
     else:
-        print("✨ All done! Check the resumes/ folder for your final PDFs.")
+        print("✨ All done! Check the output/ folder for your final PDFs.")
 
 
 if __name__ == "__main__":
