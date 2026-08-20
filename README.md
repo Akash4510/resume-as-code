@@ -12,7 +12,7 @@ Instead of fighting with word processors or manual formatting, this repository t
 
 Unlike generic web resume builders or legacy LaTeX engines (like pdfLaTeX) that produce bloated, over-engineered binaries, this pipeline is engineered for extreme efficiency:
 
-- **🪶 Ultra-Lightweight (~64 KB):** Native font subsetting and modern object formatting shrink the final PDF size down dramatically compared to traditional 250KB+ LaTeX outputs.
+- **🪶 Ultra-Lightweight (~50–80 KB):** Native font subsetting and modern object formatting shrink the final PDF size down drastically compared to traditional 250KB+ LaTeX outputs.
 - **🦀 Rust-Powered Speed:** Built on top of Typst's modern compilation core written in Rust, rendering happens in milliseconds rather than sluggish macro expansions.
 - **🤖 100% ATS-Friendly:** Clean, semantic text streams ensure Applicant Tracking Systems parse your work history, skills, and data fields with zero character corruption or parsing loss.
 
