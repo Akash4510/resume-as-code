@@ -87,7 +87,7 @@ To use a built-in theme:
 
 📚 **Helpful Links for Theming:**
 
-- [RenderCV Theme Documentation](https://www.google.com/search?q=https://docs.rendercv.com/user_guide/design/)
+- [RenderCV Theme Documentation](https://docs.rendercv.com/developer_guide/how_to/add_theme/)
 - [Typst Documentation](https://typst.app/docs/reference/)
 
 ## 💻 Local Development & Environment Setup
