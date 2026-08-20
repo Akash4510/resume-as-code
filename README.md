@@ -57,9 +57,24 @@ pip install "rendercv[full]"
 ```
 
 3. **Render the Resume Locally:**
+   You can compile your changes instantly using either of the built-in helper scripts:
+
+- Manually using python:
 
 ```bash
 python -m rendercv render src/resume.yaml
+```
+
+- Using the shell script:
+
+```bash
+./build.sh
+```
+
+- Using the python script:
+
+```bash
+python run.py
 ```
 
 ## The updated PDF will be generated instantly in your root `output/` directory.
