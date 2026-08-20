@@ -1,3 +1,11 @@
+# Ignore python virtual environments
+.venv/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Ignore intermediate build artifacts
+output/
+
+# Ignore company-specific local tweaks
+src/resume_tailored_*.yaml

@@ -16,16 +16,11 @@ for file in src/resume*.yaml; do
     }
 done
 
-# Create the public distribution folder
-mkdir -p resumes
-
-# Copy all successfully generated PDFs
-cp output/*/*.pdf resumes/ 2>/dev/null || true
-
 # Alert and exit with failure code if any single build failed
 if [ $HAS_ERROR -eq 1 ]; then
-    echo "⚠️ Finished with some errors. Successful PDFs were still moved to resumes/."
+    echo "⚠️ Finished with some errors, check the logs above."
+    echo "Successful PDFs were still moved to output/."
     exit 1
 else
-    echo "✨ All done! Check the resumes/ folder for your final PDFs."
+    echo "✨ Local build complete! Previews are available in the output/ folder."
 fi
