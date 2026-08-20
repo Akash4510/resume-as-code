@@ -8,7 +8,7 @@ import shutil
 def main():
     print("🚀 Compiling all targeted resumes...\n")
 
-    yaml_files = glob.glob("src/*.yaml")
+    yaml_files = glob.glob("src/resume*.yaml")
     if not yaml_files:
         print("❌ No YAML files found in src/")
         sys.exit(1)

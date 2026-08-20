@@ -30,7 +30,7 @@ jobs:
           HAS_ERROR=0
           HAS_SUCCESS=0
 
-          for file in src/*.yaml; do
+          for file in src/resume*.yaml; do
             if python3 -m rendercv render "$file"; then
               HAS_SUCCESS=1 # Flag that at least one built successfully
             else

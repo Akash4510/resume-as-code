@@ -7,7 +7,7 @@ echo ""
 HAS_ERROR=0
 
 # Loop through all yaml files in src/
-for file in src/*.yaml; do
+for file in src/resume*.yaml; do
     echo "Building $file..."
     # If the command fails, it triggers the || condition instead of crashing
     python -m rendercv render "$file" || {
