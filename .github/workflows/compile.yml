@@ -19,26 +19,48 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.14"
 
       - name: Install RenderCV
         run: pip install "rendercv[full]"
 
-      - name: Render Resume
-        run: python3 -m rendercv render src/resume.yaml
+      - name: Render Resumes
+        id: render # Gives this step an ID so we can reference its outputs
+        run: |
+          HAS_ERROR=0
+          HAS_SUCCESS=0
 
-      - name: Upload PDF artifact
+          for file in src/resume*.yaml; do
+            if python3 -m rendercv render "$file"; then
+              HAS_SUCCESS=1 # Flag that at least one built successfully
+            else
+              HAS_ERROR=1   # Flag that at least one failed
+            fi
+          done
+
+          # Export the success flag to GitHub Actions outputs
+          echo "has_success=$HAS_SUCCESS" >> "$GITHUB_OUTPUT"
+
+          # Fail the step if any errors occurred
+          exit $HAS_ERROR
+
+      - name: Upload PDF artifacts
+        # CRITICAL: Run even if the step failed, BUT ONLY if at least one PDF exists
+        if: always() && steps.render_resumes.outputs.has_success == '1'
         uses: actions/upload-artifact@v4
         with:
-          name: resume-pdf
-          path: output/*.pdf
-          if-no-files-found: error
+          name: compiled-resumes
+          path: output/*/*.pdf
+          if-no-files-found: ignore
 
-      - name: Commit PDF to repo
+      - name: Commit PDFs to repo
+        # CRITICAL: Commit whatever successfully built, BUT ONLY if at least one PDF exists
+        if: always() && steps.render_resumes.outputs.has_success == '1'
         run: |
-          cp output/*.pdf resume.pdf 2>/dev/null || true
+          mkdir -p resumes
+          cp output/*/*.pdf resumes/ 2>/dev/null || true
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add resume.pdf
-          git diff --cached --quiet || git commit -m "chore: auto-compile resume PDF [skip ci]"
+          git add resumes/*.pdf
+          git diff --cached --quiet || git commit -m "chore: auto-compile resumes [skip ci]"
           git push
