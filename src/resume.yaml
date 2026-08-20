@@ -36,20 +36,20 @@ cv:
         date_string: Aug 2024 - Present
         location: Bangalore, India
         highlights:
-          - "Architected the migration of legacy AEM enterprise applications to Next.js, leveraging Server-Side Rendering (SSR) and Server Actions to reduce page load times by over 90%."
-          - "Engineered a highly scalable data pipeline for massive file transfers (up to 50GB) using Next.js and AWS S3, implementing multipart chunked uploads to optimize memory management and prevent network timeouts."
-          - "Designed and developed a custom asynchronous state management library featuring timed caching and optimistic UI updates, reducing unnecessary API polling and complementing the existing Redux architecture."
-          - "Deployed secure Backend-for-Frontend (BFF) proxy APIs to interface seamlessly with Java microservices, Apigee, and Salesforce, establishing a robust, full-stack enterprise architecture."
-          - "Architected a custom internationalization (i18n) routing system from scratch using advanced Next.js rewrite configurations to bypass complex deployment constraints. Ensured zero disruption to existing API endpoints, assets, and health checks."
-          - "Acted as the primary Next.js Subject Matter Expert (SME) across multiple teams, mentoring 10+ engineers—including senior staff—on modern React paradigms, state management, and resolving complex architectural blockers."
+          - "Architected the migration of legacy AEM enterprise applications to Next.js, leveraging **Server-Side Rendering (SSR)** and Server Actions to **reduce page load times by over 90%**."
+          - "Engineered a highly scalable data pipeline for **massive file transfers (up to 50GB)** using Next.js and **AWS S3**, implementing **multipart chunked uploads** to optimize memory management and prevent network timeouts."
+          - "Designed and developed a **custom asynchronous state management** library featuring timed caching and optimistic UI updates, reducing unnecessary API polling and complementing the existing **Redux architecture**."
+          - "Deployed secure **Backend-for-Frontend (BFF)** proxy APIs to interface seamlessly with **Java microservices**, Apigee, and Salesforce, establishing a robust, full-stack enterprise architecture."
+          - "Architected a **custom internationalization (i18n) routing system** from scratch using advanced **Next.js rewrite configurations** to bypass complex deployment constraints. Ensured **zero disruption** to existing API endpoints, assets, and health checks."
+          - "Acted as the **primary Next.js Subject Matter Expert (SME)** across multiple teams, **mentoring 10+ engineers**—including senior staff—on modern React paradigms, state management, and resolving complex architectural blockers."
 
       - company: Skiaverse
         position: Full-Stack Developer Intern
         date_string: Jul 2023 - Dec 2023
         location: Remote
         highlights:
-          - "Engineered an end-to-end web application using React (Vite), Express.js, and PostgreSQL, driving the complete software development lifecycle from initial database schema design to deployment."
-          - "Implemented advanced client-side performance optimizations, including component lazy loading, dynamic routing, and optimistic state updates, resulting in a seamless user experience."
+          - "Engineered an **end-to-end web application** using **React (Vite), Express.js, and PostgreSQL**, driving the complete software development lifecycle from initial database schema design to deployment."
+          - "Implemented advanced **client-side performance optimizations**, including component lazy loading, dynamic routing, and optimistic state updates, resulting in a seamless user experience."
 
     education:
       - institution: Techno Main Saltlake
@@ -59,7 +59,7 @@ cv:
         end_date: 2024
         location: Kolkata, India
         highlights:
-          - "Aggregate CGPA: 9.4"
+          - "**Aggregate CGPA: 9.4**"
 
     projects:
       - name: "Real-Time Team Communication Platform"
@@ -67,16 +67,16 @@ cv:
         location: ""
         summary: ""
         highlights:
-          - "Architected a scalable, low-latency communication system utilizing WebSockets with HTTP polling fallbacks, supporting concurrent live messaging, WebRTC-based voice/video channels, and robust media processing via Cloudinary."
-          - "Designed a high-throughput Next.js and Prisma backend to manage multi-server data flows, implementing cursor-based batch message loading and live presence tracking to minimize database payload and optimize client-side memory."
+          - "Architected a scalable, low-latency communication system utilizing **WebSockets** with **HTTP polling** fallbacks, supporting concurrent live messaging, **WebRTC-based** voice/video channels, and robust media processing via Cloudinary."
+          - "Designed a high-throughput Next.js and Prisma backend to manage multi-server data flows, implementing **cursor-based batch message loading** and live presence tracking to **minimize database payload** and optimize client-side memory."
 
       - name: "Headless Multi-Tenant E-Commerce CMS"
         github_url: "https://github.com/Akash4510/cms-multi-tenant-admin-dashboard"
         location: ""
         summary: ""
         highlights:
-          - "Engineered a headless, multi-tenant Content Management System (CMS) capable of orchestrating inventory, product relations, and content for multiple independent storefronts from a centralized database architecture."
-          - "Developed a secure administrator dashboard featuring real-time revenue analytics, complex data aggregations, and a robust RESTful API layer for seamless cross-domain storefront data consumption."
+          - "Engineered a **headless, multi-tenant** Content Management System (CMS) capable of orchestrating inventory, product relations, and content for multiple independent storefronts from a **centralized database architecture**."
+          - "Developed a secure administrator dashboard featuring real-time revenue analytics, complex data aggregations, and a robust **RESTful API layer** for seamless **cross-domain storefront data consumption**."
 
       - name: "SaaS AI Companion Platform"
         project_url: "https://ai-companion-nu.vercel.app/"
@@ -84,8 +84,8 @@ cv:
         location: ""
         summary: ""
         highlights:
-          - "Engineered a full-stack SaaS platform utilizing the LangChain framework and Llama-2 to deliver context-aware, personalized AI conversational experiences."
-          - "Implemented persistent conversational memory and efficient prompt processing workflows to optimize LLM inference latency and ensure high-fidelity response relevance."
+          - "Engineered a full-stack SaaS platform utilizing the **LangChain framework** and **Llama-2** to deliver context-aware, personalized AI conversational experiences."
+          - "Implemented **persistent conversational memory** and efficient prompt processing workflows to **optimize LLM inference latency** and ensure high-fidelity response relevance."
 
 # ==========================================
 # 🎨 TEMPLATE CONFIG (Do Not Touch Unless Tweaking Design)
