@@ -117,18 +117,27 @@ pip install -r requirements.txt
 ```
 
 3. **Render the Resumes Locally:**
-   You can compile your changes instantly using either of the built-in helper scripts. These scripts will safely build all profiles into the isolated `output/` directory so you can preview them locally without affecting version control.
-
-- Using the shell script:
+   You can compile your changes instantly using the built-in wrapper script (`build.sh`) or the python engine (`run.py`). These scripts will safely build your profiles into the isolated `output/` directory so you can preview them locally without affecting version control.
+   **Standard Build (All Profiles)**
+   Builds every `resume*.yaml` file found in the `src/` directory.
 
 ```bash
 ./build.sh
 ```
 
-- Using the python script:
+**Live-Reload (Watch Mode) 🚀**
+Automatically recompiles your PDF in milliseconds every time you save the YAML file. If multiple profiles exist, it will open an interactive menu asking which one you want to watch.
 
 ```bash
-python run.py
+./build.sh --watch
+```
+
+**Target a Specific Profile**
+You can also bypass the menu and directly build or watch a single, specific tailored resume:
+
+```bash
+./build.sh src/resume_backend.yaml
+./build.sh src/resume_backend.yaml --watch
 ```
 
 **The updated PDFs will be generated instantly in your local `output/` directory.** _(Note: The root `resumes/` directory is strictly managed by CI/CD and will automatically update when you push your changes to GitHub)._
