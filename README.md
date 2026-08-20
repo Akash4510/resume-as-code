@@ -79,6 +79,6 @@ python -m rendercv render src/resume.yaml
 python run.py
 ```
 
-The updated PDF will be generated instantly in your root `output/` directory.
+**The updated PDF will be generated instantly in your root `output/` directory.**
 
 _Built with [RenderCV](https://github.com/rendercv/rendercv) and [Typst](https://typst.app/)._
