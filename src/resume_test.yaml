@@ -1,0 +1,208 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
+
+# ==========================================
+# 📄 RESUME CONTENT (Your Data)
+# ==========================================
+cv:
+  name: Akash Gupta Test
+  location: Bangalore, Karnataka, India
+  email: akashgupta4510@gmail.com
+  phone: "+918617731097"
+  website: https://akashgupta.dev
+  social_networks:
+    - network: LinkedIn
+      username: akash-gupta-12262a1b7
+    - network: GitHub
+      username: Akash4510
+    - network: Leetcode
+      username: shadow718
+  sections:
+    summary:
+      - "A detail-oriented Full-Stack Engineer with over a year of professional experience in Next.js and backend development. Proven ability to lead projects, architect scalable solutions, and mentor, collaborate, and learn from other developers. Passionate about leveraging advanced coding practices to build robust, high-performance applications that solve complex real-world problems."
+
+    technical_skills:
+      - label: Languages & Frameworks
+        details: Next.js, React, Node.js, Express.js, TypeScript, JavaScript, Python, C++, C, Java, Tailwind, Prisma, Flask, Framer Motion, GSAP, Zustand, TanStack React Query
+      - label: Databases & Platforms
+        details: PostgreSQL, MongoDB, SQL, Git, AWS S3, Linux, Bash, Vercel
+      - label: Core Concepts & Knowledge
+        details: Full-Stack Architecture, Scalable Systems, API Design, OOP, DSA, CI/CD, AI/ML (Pandas, NumPy, Scikit-learn, TensorFlow, LangChain), Data Science, Salesforce
+
+    experience:
+      - company: Tata Consultancy Services (TCS)
+        position: Full-Stack Engineer
+        date_string: Aug 2024 - Present
+        location: Bangalore, India
+        highlights:
+          - "Led the migration of multiple legacy websites from AEM to **Next.js**, **reducing page load times by over 90%** by leveraging **SSR** and **server actions**, while optimizing the overall project architecture for scalability."
+          - "Spearheaded the implementation of a **custom asynchronous state management** solution **(like tanstack react query)** with advanced features like **timed caching** and **optimistic updates**, complementing the use of **Redux** for the frontend."
+          - "Pioneered a robust, scalable upload and download solution for **large files (up to 50GB)** using **Next.js** and **AWS S3**."
+          - "Architected and implemented a multilingual **internationalization system** that seamlessly integrated with an existing **DevOps architecture**, and enforced good coding practices to enable easy adoption and refactoring by other teams."
+          - "Engineered and deployed dedicated and **proxy APIs to enhance application security** while collaborating cross-functionally with diverse teams (including the **JAVA microservices backend**, APIGEE and Salesforce) to design and implement scalable, **full-stack solutions** for the client. And also **mentored** over 10 new and experienced developers."
+
+      - company: Skiaverse (Internship)
+        position: Full-Stack Developer (Intern)
+        date_string: Jul 2023 - Dec 2023
+        location: Remote
+        highlights:
+          - "Architected and solely developed a full-stack web application from scratch using **Vite, Express**, and **Postgres DB**."
+          - "Engineered advanced performance features like **lazy loading, dynamic routing**, and **optimistic updates** for a robust, highly-praised UX, collaborating with cross-functional teams, ensuring robust data management for the application."
+
+    education:
+      - institution: Techno Main Saltlake
+        area: Electronics and Instrumentation
+        degree: B.Tech
+        start_date: 2020
+        end_date: 2024
+        location: Kolkata, India
+        highlights:
+          - "Aggregate CGPA: 9.4"
+
+    projects:
+      - name: "AI Companion"
+        project_url: "https://ai-companion-nu.vercel.app/"
+        github_url: "https://github.com/Akash4510/ai-companion"
+        location:
+        summary: ""
+        highlights:
+          - "Engineered a full-stack SaaS AI companion platform leveraging the powerful **Llama-2 model** with the **Langchain** framework to create dynamic, personalized conversational experiences."
+
+      - name: "Team Chat (Discord Clone)"
+        github_url: "https://github.com/Akash4510/team-chat"
+        location:
+        summary: ""
+        highlights:
+          - "Architected a scalable, real-time chat application using **WebSockets** with a polling fallback to power a foundation for live chats, direct messages with media upload and download support using **Cloudinary**, along with voice/video channels."
+          - "Developed a robust backend with **Next.js** and **Prisma** to handle multiple servers and thousands of messages, implementing advanced strategies like **batch message loading** and live status handling for optimal performance."
+
+      - name: "Multi-tenant CMS E-commerce Dashboard"
+        github_url: "https://github.com/Akash4510/cms-multi-tenant-admin-dashboard"
+        location:
+        summary: ""
+        highlights:
+          - "Architected a scalable, **multi-tenant** e-commerce **CMS** with a central database, enabling seamless connection and management of multiple distinct frontend shops."
+          - "Developed a robust admin dashboard with comprehensive product and inventory management, integrating real-time revenue tracking to provide business owners with actionable insights."
+
+# ==========================================
+# 🎨 TEMPLATE CONFIG (Do Not Touch Unless Tweaking Design)
+# ==========================================
+design:
+  theme: customtheme
+
+  page:
+    size: a4
+    top_margin: 1.2cm
+    bottom_margin: 1.2cm
+    left_margin: 1.27cm
+    right_margin: 1.27cm
+    show_footer: false
+    show_top_note: false
+
+  colors:
+    body: rgb(0, 0, 0)
+    name: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 0, 0)
+    footer: rgb(128, 128, 128)
+    top_note: rgb(128, 128, 128)
+
+  typography:
+    font_family: Source Sans 3
+    font_size:
+      body: 10pt
+      name: 30pt
+      section_titles: 1.3em
+    line_spacing: 0.55em
+    alignment: left
+    date_and_location_column_alignment: right
+    bold:
+      name: true
+      section_titles: false
+    small_caps:
+      name: false
+      section_titles: true
+
+  links:
+    underline: true
+    show_external_link_icon: false
+
+  header:
+    alignment: center
+    space_below_name: 0.4cm
+    space_below_connections: 0.4cm
+    connections:
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: false
+      separator: "|"
+      space_between_connections: 0.4cm
+
+  section_titles:
+    type: with_full_line
+    line_thickness: 0.5pt
+    space_above: 0.2cm
+    space_below: 0.1cm
+
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.8em
+    show_time_spans_in: []
+
+  entries:
+    date_and_location_width: 4.5cm
+    side_space: 0cm
+    space_between_columns: 0.1cm
+    allow_page_break: true
+    short_second_row: true
+    degree_width: 0cm
+    summary:
+      space_left: 0cm
+    highlights:
+      bullet: "•"
+      nested_bullet: "-"
+      space_above: 0.15cm
+      space_left: 0.3cm
+      space_between_items: 0.15cm
+      space_between_bullet_and_text: 0.5em
+
+  templates:
+    one_line_entry:
+      main_column: "**LABEL:** DETAILS"
+    education_entry:
+      main_column: |-
+        **INSTITUTION**
+        DEGREE, AREA
+        HIGHLIGHTS
+      degree_column: null
+      date_and_location_column: "LOCATION, DATE"
+    normal_entry:
+      main_column: |-
+        **NAME**
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+    experience_entry:
+      main_column: |-
+        **COMPANY**
+        *POSITION*
+        HIGHLIGHTS
+      date_and_location_column: |-
+        DATE
+        *LOCATION*
+
+locale:
+  language: english
+
+# ==========================================
+# ⚙️ RENDERCV SETTINGS (Pipeline Output Control)
+# ==========================================
+settings:
+  render_command:
+    typst_path: ../output/resume_test/Akash_Gupta_test_CV.typ
+    pdf_path: ../output/resume_test/Akash_Gupta_test_CV.pdf
+    markdown_path: ../output/resume_test/Akash_Gupta_test_CV.md
+    html_path: ../output/resume_test/Akash_Gupta_test_CV.html
+    png_path: ../output/resume_test/Akash_Gupta_test_CV.png

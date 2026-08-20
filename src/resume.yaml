@@ -201,8 +201,8 @@ locale:
 # ==========================================
 settings:
   render_command:
-    typst_path: ../output/Akash_Gupta_CV.typ
-    pdf_path: ../output/Akash_Gupta_CV.pdf
-    markdown_path: ../output/Akash_Gupta_CV.md
-    html_path: ../output/Akash_Gupta_CV.html
-    png_path: ../output/Akash_Gupta_CV.png
+    typst_path: ../output/resume/Akash_Gupta_CV.typ
+    pdf_path: ../output/resume/Akash_Gupta_CV.pdf
+    markdown_path: ../output/resume/Akash_Gupta_CV.md
+    html_path: ../output/resume/Akash_Gupta_CV.html
+    png_path: ../output/resume/Akash_Gupta_CV.png
