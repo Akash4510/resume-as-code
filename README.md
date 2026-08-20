@@ -54,6 +54,42 @@ The GitHub Action will automatically intercept the push, build all valid `resume
 
 > **Note on Tailored One-Offs:** If you need a company-specific resume, duplicate a profile, name it `tailored-<company>.yaml` (which is ignored by Git), build it locally, and submit. This keeps the repository completely clean.
 
+## 🎨 Modifying or Changing the Template
+
+This project strictly separates content from presentation. You are not locked into the current visual design and can easily modify it or swap it out entirely.
+
+### Option 1: Modify the Existing Theme
+
+The current visual layout is a custom theme powered by [Typst](https://typst.app/docs/) and [Jinja2](https://jinja.palletsprojects.com/).
+To change fonts, spacing, margins, or the arrangement of elements:
+
+1. Open the `src/customtheme/` folder.
+2. Edit the `.j2` (Jinja2) files inside the `entries/` folder to change how specific sections (like Education or Experience) are structured.
+3. Edit the main style variables in `src/customtheme/__init__.py` or the core Typst files to adjust global styles.
+
+### Option 2: Use a Built-in RenderCV Theme
+
+If you want to completely swap out the design without writing any code, RenderCV comes with several beautiful built-in themes (Classic, Sb2nov, EngineeringResumes, etc.).
+
+To use a built-in theme:
+
+1. Open your target profile (e.g., `src/resume_backend.yaml`).
+2. Delete or comment out the current custom `design:` block.
+3. Replace it with a built-in theme reference:
+   ```yaml
+   design:
+     theme: classic # Options: classic, sb2nov, engineeringresumes
+     font: Source Sans 3
+     font_size: 10pt
+     page_margins: 1.5cm
+   ```
+4. _Note: If you switch to a built-in theme, you can safely delete the `src/customtheme/` folder from this repository._
+
+📚 **Helpful Links for Theming:**
+
+- [RenderCV Theme Documentation](https://www.google.com/search?q=https://docs.rendercv.com/user_guide/design/)
+- [Typst Documentation](https://typst.app/docs/reference/)
+
 ## 💻 Local Development & Environment Setup
 
 To match the GitHub Actions runner and test changes locally inside a sandbox, follow these steps (configured for WSL Ubuntu / Zsh):
