@@ -52,7 +52,7 @@ rendercv_settings:
 
 The GitHub Action will automatically intercept the push, build all valid `resume*.yaml` profiles, and extract the fresh PDFs into the `resumes/` folder.
 
-> **Note on Tailored One-Offs:** If you need a company-specific resume, duplicate a profile, name it `tailored-<company>.yaml` (which is ignored by Git), build it locally, and submit. This keeps the repository completely clean.
+> **Note on Tailored One-Offs:** If you need a company-specific resume, duplicate a profile, name it `resume_tailored_<company>.yaml` (which is ignored by Git), build it locally, and submit. This keeps the repository completely clean.
 
 ## 🎨 Modifying or Changing the Template
 
@@ -87,7 +87,7 @@ To use a built-in theme:
 
 📚 **Helpful Links for Theming:**
 
-- [RenderCV Theme Documentation](https://www.google.com/search?q=https://docs.rendercv.com/user_guide/design/)
+- [RenderCV Theme Documentation](https://docs.rendercv.com/developer_guide/how_to/add_theme/)
 - [Typst Documentation](https://typst.app/docs/reference/)
 
 ## 💻 Local Development & Environment Setup
