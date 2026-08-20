@@ -20,11 +20,13 @@ This project strictly separates **content** (data) from **design** (presentation
 │   └── compile.yml        # CI/CD pipeline for automated PDF compilation
 ├── output/
 │   └── Akash_Gupta_CV.pdf # The final compiled resume artifact
-└── src/
-    ├── customtheme/       # Custom Typst / Jinja2 template engine & entry styles
-    │   └── entries/       # Specialized entry layouts (Experience, Education, Projects, etc.)
-    └── resume.yaml        # Core data file (Edit this to update resume content)
-
+├── src/
+│   ├── customtheme/       # Custom Typst / Jinja2 template engine & entry styles
+│   │   └── entries/       # Specialized entry layouts (Experience, Education, Projects, etc.)
+│   └── resume.yaml        # Core data file (Edit this to update resume content)
+├── requirements.txt       # Pinned Python package dependencies
+├── build.sh               # Quick-build shell script for local development
+└── run.py                 # Cross-platform Python execution script for local builds
 ```
 
 ## 🚀 How to Update the Resume
@@ -49,11 +51,11 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-2. **Install RenderCV:**
+2. **Install Dependencies:**
 
 ```bash
 pip install --upgrade pip
-pip install "rendercv[full]"
+pip install -r requirements.txt
 ```
 
 3. **Render the Resume Locally:**
