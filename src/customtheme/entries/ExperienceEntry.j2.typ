@@ -19,7 +19,10 @@
     {% if entry.highlights %}
     #highlights(
       {% for item in entry.highlights %}
-      [{{ item }}],
+      [
+        #set text(size: 0.9em)
+        {{ item }}
+      ],
       {% endfor %}
     )
     {% endif %}

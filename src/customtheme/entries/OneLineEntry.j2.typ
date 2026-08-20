@@ -1,6 +1,7 @@
 #block(
   below: {{ design.sections.space_between_regular_entries }},
   [
+    #set text(size: 0.9em)
     #list(
       marker: dot,
       spacing: 0pt,
