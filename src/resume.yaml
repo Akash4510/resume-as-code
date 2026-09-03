@@ -36,20 +36,20 @@ cv:
         date_string: Aug 2024 - Present
         location: Bangalore, India
         highlights:
-          - "Architected the migration of legacy AEM enterprise applications to Next.js, leveraging **Server-Side Rendering (SSR)** and Server Actions to **reduce page load times by over 90%**."
-          - "Engineered a highly scalable data pipeline for **massive file transfers (up to 50GB)** using Next.js and **AWS S3**, implementing **multipart chunked uploads** to optimize memory management and prevent network timeouts."
-          - "Designed and developed a **custom asynchronous state management** library featuring timed caching and optimistic UI updates, reducing unnecessary API polling and complementing the existing **Redux architecture**."
-          - "Deployed secure **Backend-for-Frontend (BFF)** proxy APIs to interface seamlessly with **Java microservices**, Apigee, and Salesforce, establishing a robust, full-stack enterprise architecture."
-          - "Architected a **custom internationalization (i18n) routing system** from scratch using advanced **Next.js rewrite configurations** to bypass complex deployment constraints. Ensured **zero disruption** to existing API endpoints, assets, and health checks."
-          - "Acted as the **primary Next.js Subject Matter Expert (SME)** across multiple teams, **mentoring 10+ engineers**—including senior staff—on modern React paradigms, state management, and resolving complex architectural blockers."
+          - "**90%+ reduction in page load times** achieved by architecting the migration of legacy enterprise applications to Next.js, leveraging **Server-Side Rendering (SSR)** and Server Actions."
+          - "**40% increase in overall delivery speed and a 95% reduction in translation time** achieved by developing and integrating custom **agentic AI workflows**, demonstrating real AI ROI and optimizing team code flow."
+          - "**Zero network timeouts for massive file transfers (up to 50GB)** by engineering a highly scalable data pipeline using Next.js and **AWS S3**, implementing **multipart chunked uploads** to optimize memory management."
+          - "**Eliminated unnecessary API polling and reduced server load** by designing a **custom asynchronous state management** library featuring timed caching and optimistic UI updates to complement the existing **Redux architecture**."
+          - "**Zero disruption to existing API endpoints and health checks** while architecting a **custom internationalization (i18n) routing system** from scratch using advanced **Next.js rewrite configurations** to bypass complex deployment constraints."
+          - "**Mentored 10+ engineers**—including senior developers—by acting as the primary **Next.js Subject Matter Expert (SME)**, standardizing modern React paradigms and resolving complex architectural blockers across multiple teams."
 
       - company: Skiaverse
         position: Full-Stack Developer Intern
         date_string: Jul 2023 - Dec 2023
         location: Remote
         highlights:
-          - "Engineered an **end-to-end web application** using **React (Vite), Express.js, and PostgreSQL**, driving the complete software development lifecycle from initial database schema design to deployment."
-          - "Implemented advanced **client-side performance optimizations**, including component lazy loading, dynamic routing, and optimistic state updates, resulting in a seamless user experience."
+          - "**Successfully deployed an end-to-end web application** by driving the complete software development lifecycle as the sole developer, utilizing **React (Vite), Express.js, and PostgreSQL** from initial schema design to production."
+          - "**70% speed increase in existing application modules** achieved by overhauling data fetching and caching architectures, while single-handedly architecting the remaining core features with **lazy loading, dynamic routing, and optimistic state updates**."
 
     education:
       - institution: Techno Main Saltlake
