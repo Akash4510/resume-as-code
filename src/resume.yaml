@@ -149,7 +149,7 @@ design:
 
   sections:
     allow_page_break: true
-    space_between_regular_entries: 0.6em
+    space_between_regular_entries: 0.75em
     show_time_spans_in: []
 
   entries:
