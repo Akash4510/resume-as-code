@@ -62,8 +62,8 @@ cv:
           - "**Aggregate CGPA: 9.4**"
 
     projects:
-      - name: "Real-Time Team Communication Platform"
-        github_url: "https://github.com/Akash4510/team-chat"
+      - name: "Hangout Lobby - Real-Time Chat & Community Platform"
+        github_url: "https://github.com/Akash4510/hangout-lobby"
         location: ""
         summary: ""
         highlights:
@@ -79,7 +79,6 @@ cv:
           - "Developed a secure administrator dashboard featuring real-time revenue analytics, complex data aggregations, and a robust **RESTful API layer** for seamless **cross-domain storefront data consumption**."
 
       - name: "SaaS AI Companion Platform"
-        project_url: "https://ai-companion-nu.vercel.app/"
         github_url: "https://github.com/Akash4510/ai-companion"
         location: ""
         summary: ""
