@@ -67,24 +67,24 @@ cv:
         location: ""
         summary: ""
         highlights:
-          - "Architected a scalable, low-latency communication system utilizing **WebSockets** with **HTTP polling** fallbacks, supporting concurrent live messaging, **WebRTC-based** voice/video channels, and robust media processing via Cloudinary."
-          - "Designed a high-throughput Next.js and Prisma backend to manage multi-server data flows, implementing **cursor-based batch message loading** and live presence tracking to **minimize database payload** and optimize client-side memory."
+          - "Architected a scalable, **low-latency communication system** utilizing **WebSockets** with **HTTP polling fallbacks** for zero-loss concurrent messaging, alongside **WebRTC**-based voice and video channels."
+          - "Designed a Next.js and Prisma backend leveraging **cursor-based pagination** and **TanStack React Query** caching to minimize database payloads and optimize client-side memory during high-volume chat histories."
 
-      - name: "Headless Multi-Tenant E-Commerce CMS"
+      - name: "Multi-Tenant E-Commerce CMS & Storefront"
         github_url: "https://github.com/Akash4510/cms-multi-tenant-admin-dashboard"
         location: ""
         summary: ""
         highlights:
-          - "Engineered a **headless, multi-tenant** Content Management System (CMS) capable of orchestrating inventory, product relations, and content for multiple independent storefronts from a **centralized database architecture**."
-          - "Developed a secure administrator dashboard featuring real-time revenue analytics, complex data aggregations, and a robust **RESTful API layer** for seamless **cross-domain storefront data consumption**."
+          - "Engineered a **headless, multi-tenant CMS** capable of orchestrating inventory, product relations, and content for multiple independent storefronts from a **centralized PostgreSQL database**."
+          - "Developed a secure administrator dashboard featuring real-time revenue analytics and a robust **RESTful API layer**, integrating Stripe webhooks for **seamless cross-domain storefront data consumption**."
 
       - name: "SaaS AI Companion Platform"
         github_url: "https://github.com/Akash4510/ai-companion"
         location: ""
         summary: ""
         highlights:
-          - "Engineered a full-stack SaaS platform utilizing the **LangChain framework** and **Llama-2** to deliver context-aware, personalized AI conversational experiences."
-          - "Implemented **persistent conversational memory** and efficient prompt processing workflows to **optimize LLM inference latency** and ensure high-fidelity response relevance."
+          - "Engineered a full-stack SaaS platform utilizing the **LangChain framework** and **Llama-2** to configure, persist, and deliver **context-aware, personalized AI conversational experiences**."
+          - "Implemented **Pinecone vector embeddings** for **long-term persistent conversational memory**, optimizing prompt workflows to reduce **LLM inference latency** alongside **Stripe** for subscription billing."
 
 # ==========================================
 # 🎨 TEMPLATE CONFIG (Do Not Touch Unless Tweaking Design)
