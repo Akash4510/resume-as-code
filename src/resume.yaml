@@ -40,8 +40,8 @@ cv:
           - "**40% increase in overall delivery speed and a 95% reduction in translation time** achieved by developing and integrating custom **agentic AI workflows**, demonstrating real AI ROI and optimizing team code flow."
           - "**Zero network timeouts for massive file transfers (up to 50GB)** by engineering a highly scalable data pipeline using Next.js and **AWS S3**, implementing **multipart chunked uploads** to optimize memory management."
           - "**Eliminated unnecessary API polling and reduced server load** by designing a **custom asynchronous state management** library featuring timed caching and optimistic UI updates to complement the existing **Redux architecture**."
-          - "**Zero disruption to existing API endpoints and health checks** while architecting a **custom internationalization (i18n) routing system** from scratch using advanced **Next.js rewrite configurations** to bypass complex deployment constraints."
-          - "**Mentored 10+ engineers**—including senior developers—by acting as the primary **Next.js Subject Matter Expert (SME)**, standardizing modern React paradigms and resolving complex architectural blockers across multiple teams."
+          - "Architected a **custom internationalization (i18n) routing system** from scratch using advanced **Next.js rewrite configurations** to bypass complex deployment constraints. Ensuring **zero disruption to existing API endpoints and health-checks**"
+          - "**Mentored 10+ engineers**—including senior developers—by acting as the primary Next.js Subject Matter Expert (SME), standardizing modern React paradigms and resolving complex architectural blockers across multiple teams."
 
       - company: Skiaverse
         position: Full-Stack Developer Intern
@@ -59,7 +59,7 @@ cv:
         end_date: 2024
         location: Kolkata, India
         highlights:
-          - "**Aggregate CGPA: 9.4**"
+          - "Aggregate CGPA: **9.4**"
 
     projects:
       - name: "Hangout Lobby - Real-Time Chat & Community Platform"
@@ -75,7 +75,7 @@ cv:
         location: ""
         summary: ""
         highlights:
-          - "Engineered a **headless, multi-tenant CMS** capable of orchestrating inventory, product relations, and content for multiple independent storefronts from a **centralized PostgreSQL database**."
+          - "Engineered a **headless, multi-tenant CMS** capable of orchestrating inventory, product relations, and content for multiple independent storefronts from a **centralized database architecture (PostgreSQL)**."
           - "Developed a secure administrator dashboard featuring real-time revenue analytics and a robust **RESTful API layer**, integrating Stripe webhooks for **seamless cross-domain storefront data consumption**."
 
       - name: "SaaS AI Companion Platform"

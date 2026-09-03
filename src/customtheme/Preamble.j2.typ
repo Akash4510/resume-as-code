@@ -100,7 +100,7 @@
         columns: (1fr, auto),
         align: (left, right),
         row-gutter: 0.64em, 
-        [#strong(title)], [#date],
+        [#strong(text(size: 1.15em, title))], [#text(size: 1em, date)],
         [#emph(text(size: 1em, subtitle))],
         [#emph(text(size: 1em, location))]
       )
