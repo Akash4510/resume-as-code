@@ -36,20 +36,20 @@ cv:
         date_string: Aug 2024 - Present
         location: Bangalore, India
         highlights:
-          - "Architected the migration of legacy AEM enterprise applications to Next.js, leveraging **Server-Side Rendering (SSR)** and Server Actions to **reduce page load times by over 90%**."
-          - "Engineered a highly scalable data pipeline for **massive file transfers (up to 50GB)** using Next.js and **AWS S3**, implementing **multipart chunked uploads** to optimize memory management and prevent network timeouts."
-          - "Designed and developed a **custom asynchronous state management** library featuring timed caching and optimistic UI updates, reducing unnecessary API polling and complementing the existing **Redux architecture**."
-          - "Deployed secure **Backend-for-Frontend (BFF)** proxy APIs to interface seamlessly with **Java microservices**, Apigee, and Salesforce, establishing a robust, full-stack enterprise architecture."
-          - "Architected a **custom internationalization (i18n) routing system** from scratch using advanced **Next.js rewrite configurations** to bypass complex deployment constraints. Ensured **zero disruption** to existing API endpoints, assets, and health checks."
-          - "Acted as the **primary Next.js Subject Matter Expert (SME)** across multiple teams, **mentoring 10+ engineers**—including senior staff—on modern React paradigms, state management, and resolving complex architectural blockers."
+          - "**90%+ reduction in page load times** achieved by architecting the migration of legacy enterprise applications to Next.js, leveraging **Server-Side Rendering (SSR)** and Server Actions."
+          - "**40% increase in overall delivery speed and a 95% reduction in translation time** achieved by developing and integrating custom **agentic AI workflows**, demonstrating real AI ROI and optimizing team code flow."
+          - "**Zero network timeouts for massive file transfers (up to 50GB)** by engineering a highly scalable data pipeline using Next.js and **AWS S3**, implementing **multipart chunked uploads** to optimize memory management."
+          - "**Eliminated unnecessary API polling and reduced server load** by designing a **custom asynchronous state management** library featuring timed caching and optimistic UI updates to complement the existing **Redux architecture**."
+          - "Architected a **custom internationalization (i18n) routing system** from scratch using advanced **Next.js rewrite configurations** to bypass complex deployment constraints. Ensuring **zero disruption to existing API endpoints and health-checks**"
+          - "**Mentored 10+ engineers**—including senior developers—by acting as the primary Next.js Subject Matter Expert (SME), standardizing modern React paradigms and resolving complex architectural blockers across multiple teams."
 
       - company: Skiaverse
         position: Full-Stack Developer Intern
         date_string: Jul 2023 - Dec 2023
         location: Remote
         highlights:
-          - "Engineered an **end-to-end web application** using **React (Vite), Express.js, and PostgreSQL**, driving the complete software development lifecycle from initial database schema design to deployment."
-          - "Implemented advanced **client-side performance optimizations**, including component lazy loading, dynamic routing, and optimistic state updates, resulting in a seamless user experience."
+          - "**Successfully deployed an end-to-end web application** by driving the complete software development lifecycle as the sole developer, utilizing **React (Vite), Express.js, and PostgreSQL** from initial schema design to production."
+          - "**70% speed increase in existing application modules** achieved by overhauling data fetching and caching architectures, while single-handedly architecting the remaining core features with **lazy loading, dynamic routing, and optimistic state updates**."
 
     education:
       - institution: Techno Main Saltlake
@@ -59,7 +59,7 @@ cv:
         end_date: 2024
         location: Kolkata, India
         highlights:
-          - "**Aggregate CGPA: 9.4**"
+          - "Aggregate CGPA: **9.4**"
 
     projects:
       - name: "Hangout Lobby - Real-Time Chat & Community Platform"
@@ -67,24 +67,24 @@ cv:
         location: ""
         summary: ""
         highlights:
-          - "Architected a scalable, low-latency communication system utilizing **WebSockets** with **HTTP polling** fallbacks, supporting concurrent live messaging, **WebRTC-based** voice/video channels, and robust media processing via Cloudinary."
-          - "Designed a high-throughput Next.js and Prisma backend to manage multi-server data flows, implementing **cursor-based batch message loading** and live presence tracking to **minimize database payload** and optimize client-side memory."
+          - "Architected a scalable, **low-latency communication system** utilizing **WebSockets** with **HTTP polling fallbacks** for zero-loss concurrent messaging, alongside **WebRTC**-based voice and video channels."
+          - "Designed a Next.js and Prisma backend leveraging **cursor-based pagination** and **TanStack React Query** caching to minimize database payloads and optimize client-side memory during high-volume chat histories."
 
-      - name: "Headless Multi-Tenant E-Commerce CMS"
+      - name: "Multi-Tenant E-Commerce CMS & Storefront"
         github_url: "https://github.com/Akash4510/cms-multi-tenant-admin-dashboard"
         location: ""
         summary: ""
         highlights:
-          - "Engineered a **headless, multi-tenant** Content Management System (CMS) capable of orchestrating inventory, product relations, and content for multiple independent storefronts from a **centralized database architecture**."
-          - "Developed a secure administrator dashboard featuring real-time revenue analytics, complex data aggregations, and a robust **RESTful API layer** for seamless **cross-domain storefront data consumption**."
+          - "Engineered a **headless, multi-tenant CMS** capable of orchestrating inventory, product relations, and content for multiple independent storefronts from a **centralized database architecture (PostgreSQL)**."
+          - "Developed a secure administrator dashboard featuring real-time revenue analytics and a robust **RESTful API layer**, integrating Stripe webhooks for **seamless cross-domain storefront data consumption**."
 
       - name: "SaaS AI Companion Platform"
         github_url: "https://github.com/Akash4510/ai-companion"
         location: ""
         summary: ""
         highlights:
-          - "Engineered a full-stack SaaS platform utilizing the **LangChain framework** and **Llama-2** to deliver context-aware, personalized AI conversational experiences."
-          - "Implemented **persistent conversational memory** and efficient prompt processing workflows to **optimize LLM inference latency** and ensure high-fidelity response relevance."
+          - "Engineered a full-stack SaaS platform utilizing the **LangChain framework** and **Llama-2** to configure, persist, and deliver **context-aware, personalized AI conversational experiences**."
+          - "Implemented **Pinecone vector embeddings** for **long-term persistent conversational memory**, optimizing prompt workflows to reduce **LLM inference latency** alongside **Stripe** for subscription billing."
 
 # ==========================================
 # 🎨 TEMPLATE CONFIG (Do Not Touch Unless Tweaking Design)
