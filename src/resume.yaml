@@ -40,7 +40,7 @@ cv:
           - "**40% increase in overall delivery speed and a 95% reduction in translation time** achieved by developing and integrating custom **agentic AI workflows**, demonstrating real AI ROI and optimizing team code flow."
           - "**Zero network timeouts for massive file transfers (up to 50GB)** by engineering a highly scalable data pipeline using Next.js and **AWS S3**, implementing **multipart chunked uploads** to optimize memory management."
           - "**Eliminated unnecessary API polling and reduced server load** by designing a **custom asynchronous state management** library featuring timed caching and optimistic UI updates to complement the existing **Redux architecture**."
-          - "Architected a **custom internationalization (i18n) routing system** from scratch using advanced **Next.js rewrite configurations** to bypass complex deployment constraints. Ensuring **zero disruption to existing API endpoints and health-checks**"
+          - "Architected and developed a **custom internationalization (i18n) routing system** from scratch using advanced **Next.js rewrite configurations** to bypass complex deployment constraints. Ensuring **zero disruption to existing API endpoints and health-checks**"
           - "**Mentored 10+ engineers**—including senior developers—by acting as the primary Next.js Subject Matter Expert (SME), standardizing modern React paradigms and resolving complex architectural blockers across multiple teams."
 
       - company: Skiaverse
