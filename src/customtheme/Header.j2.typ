@@ -13,7 +13,7 @@
     {% if cv.website %}
     #link("{{ cv.website }}")[#fa-icon("globe", size: 0.9em) #h(1pt) {{ cv.website|replace("https://", "")|replace("http://", "")|replace("/", "") }}] |
     {% endif %}
-    {% for network in cv.social_networks if network.network != "Leetcode" %}
+    {% for network in cv.social_networks %}
     {% if network.network == "LinkedIn" %}
     #link("{{ network.url }}")[#fa-icon("linkedin", size: 0.9em) #h(1pt) LinkedIn]{% if not loop.last %} |{% endif %}
     {% elif network.network == "GitHub" %}
