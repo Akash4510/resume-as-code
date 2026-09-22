@@ -8,18 +8,16 @@
   [
     #fa-icon("location-dot", size: 0.9em) #h(2pt) #text(size: 1em, weight: 400, [{{ cv.location }}])
   ],
-  [
+[
     #set text(size: 1em)
     {% if cv.website %}
     #link("{{ cv.website }}")[#fa-icon("globe", size: 0.9em) #h(1pt) {{ cv.website|replace("https://", "")|replace("http://", "")|replace("/", "") }}] |
     {% endif %}
-    {% for network in cv.social_networks %}
+    {% for network in cv.social_networks if network.network != "Leetcode" %}
     {% if network.network == "LinkedIn" %}
-    #link("{{ network.url }}")[#fa-icon("linkedin", size: 0.9em) #h(1pt) LinkedIn] |
+    #link("{{ network.url }}")[#fa-icon("linkedin", size: 0.9em) #h(1pt) LinkedIn]{% if not loop.last %} |{% endif %}
     {% elif network.network == "GitHub" %}
-    #link("{{ network.url }}")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub] |
-    {% elif network.network == "Leetcode" %}
-    #link("{{ network.url }}")[Leetcode]{% if not loop.last %} |{% endif %}
+    #link("{{ network.url }}")[#fa-icon("github", size: 0.9em) #h(1pt) GitHub]{% if not loop.last %} |{% endif %}
     {% else %}
     #link("{{ network.url }}")[{{ network.network }}]{% if not loop.last %} |{% endif %}
     {% endif %}
